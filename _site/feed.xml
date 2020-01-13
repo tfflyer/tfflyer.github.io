@@ -5,9 +5,43 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 08 Jan 2020 11:01:10 +0800</pubDate>
-    <lastBuildDate>Wed, 08 Jan 2020 11:01:10 +0800</lastBuildDate>
+    <pubDate>Mon, 13 Jan 2020 17:10:22 +0800</pubDate>
+    <lastBuildDate>Mon, 13 Jan 2020 17:10:22 +0800</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>Welcome to tfflyer Blog</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;“Yeah It’s on. ”&lt;/p&gt;
+
+  &lt;p&gt;初次见面，请多指教。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;首先感谢 &lt;a href=&quot;https://github.com/Huxpro/huxpro.github.io&quot;&gt;Hux&lt;/a&gt; 的 &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; 模板，让搭建一个实用美观的博客如此简便。&lt;/p&gt;
+
+&lt;h2 id=&quot;这将是我第一个真正意义上的博客吧尽管之前还有个网站&quot;&gt;这将是我第一个真正意义上的博客吧，尽管之前还有个网站&lt;/h2&gt;
+
+&lt;h2 id=&quot;正文&quot;&gt;正文&lt;/h2&gt;
+
+&lt;p&gt;步入研究生以来，一直被项目牵扯，很多喜欢的东西都没能持续投入。也算是在新的一年下定决心，还是把时间花在自己感兴趣的事物上，所以决定写点东西。
+希望可以和热衷于技术的小伙伴们一起分享一些好的点子，共同进步&lt;/p&gt;
+
+&lt;h2 id=&quot;后记&quot;&gt;后记&lt;/h2&gt;
+
+&lt;p&gt;这个博客的诞生，纯粹是突发奇想，也希望自己能一直坚持下去，在复现和记录中更深刻地理解。&lt;/p&gt;
+
+&lt;p&gt;如果你恰好逛到了这里，希望你也能喜欢这里。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Jan 2020 02:48:00 +0800</pubDate>
+        <link>http://localhost:4000/2020/01/09/hello-2020/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/01/09/hello-2020/</guid>
+        
+        <category>about me</category>
+        
+        
+      </item>
     
   </channel>
 </rss>
