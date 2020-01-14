@@ -5,9 +5,50 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 13 Jan 2020 17:36:25 +0800</pubDate>
-    <lastBuildDate>Mon, 13 Jan 2020 17:36:25 +0800</lastBuildDate>
+    <pubDate>Tue, 14 Jan 2020 11:05:31 +0800</pubDate>
+    <lastBuildDate>Tue, 14 Jan 2020 11:05:31 +0800</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>Week—report</title>
+        <description>&lt;h2 id=&quot;每周工作报告201916-2020112&quot;&gt;每周工作报告（2019.1.6-2020.1.12）&lt;/h2&gt;
+
+&lt;h3 id=&quot;1文献阅读情况&quot;&gt;1、文献阅读情况&lt;/h3&gt;
+
+&lt;p&gt;a.《BiMorphing》：A  Bi-Directional Bursting Defense Aginst Website Figerprinting Attacks 提出了一种应对流量指纹攻击的防御方法，认为是目前的state-of-the-art&lt;/p&gt;
+
+&lt;h3 id=&quot;2论文进展情况&quot;&gt;2、论文进展情况&lt;/h3&gt;
+
+&lt;p&gt;设置并完成时间效率对比三组实验，实验效果一般，有待进一步调整&lt;/p&gt;
+
+&lt;h3 id=&quot;3项目参与情况&quot;&gt;3、项目参与情况&lt;/h3&gt;
+
+&lt;p&gt;a. 整理准备15组演示系统调试用数据&lt;/p&gt;
+
+&lt;p&gt;b.根据课题五展示系统需要，整合已有数据库，建立information_all、event两个索引，分别对应涉证信息与群体性事件，整合朱衍丞师兄情感算法、关键词抽取算法到数据插入函数中，实现爬虫数据到展示数据的自动转换&lt;/p&gt;
+
+&lt;p&gt;c.准备课题五原型系统数据，反馈系统修改意见&lt;/p&gt;
+
+&lt;p&gt;d.郭文贵数据对接&lt;/p&gt;
+
+&lt;h3 id=&quot;4毕设实验进展情况&quot;&gt;4、毕设实验进展情况&lt;/h3&gt;
+
+&lt;p&gt;无&lt;/p&gt;
+
+&lt;h3 id=&quot;5其它&quot;&gt;5、其它&lt;/h3&gt;
+
+&lt;p&gt;无&lt;/p&gt;
+
+&lt;h3 id=&quot;6屏幕时间&quot;&gt;6、屏幕时间&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Users/tfflyer/Library/Application Support/typora-user-images/image-20200112155609634.png&quot; alt=&quot;image-20200112155609634&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 Jan 2020 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2020/01/14/week-report/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/01/14/week-report/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Welcome to tfflyer Blog</title>
