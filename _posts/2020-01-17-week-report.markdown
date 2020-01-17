@@ -1,8 +1,10 @@
+
+
 ---
 layout:     post
-title:      "周报(2020.1.6-2020.1.12）"
+title:      "周报(2020.1.12-2020.1.17）"
 subtitle:   " \"Hello World, Hello tfflyer\""
-date:       2020-01-12 18:48:00
+date:       2020-01-17 18:48:00
 author:     "tfflyer"
 header-img: "img/post-bg-2020.jpg"
 tags:
@@ -14,7 +16,8 @@ tags:
 
 
 
-## 每周工作报告（2020.1.6-2020.1.12）
+
+## 每周工作报告（2019.1.6-2020.1.12）
 
 ### 1、文献阅读情况
 
@@ -22,17 +25,13 @@ a.《BiMorphing》：A  Bi-Directional Bursting Defense Aginst Website Figerprin
 
 ### 2、论文进展情况
 
-设置并完成时间效率对比三组实验，实验效果一般，有待进一步调整
+无
 
 ### 3、项目参与情况
 
-a. 整理准备15组演示系统调试用数据
+a. 完成课题五操作系统中交互查询的接口
 
-b.根据课题五展示系统需要，整合已有数据库，建立information_all、event两个索引，分别对应涉证信息与群体性事件，整合朱衍丞师兄情感算法、关键词抽取算法到数据插入函数中，实现爬虫数据到展示数据的自动转换
-
-c.准备课题五原型系统数据，反馈系统修改意见
-
-d.郭文贵数据对接
+b.
 
 ### 4、毕设实验进展情况
 
@@ -40,7 +39,13 @@ d.郭文贵数据对接
 
 ### 5、其它
 
-无
+a.学习了**模块打包机**webpack，可以模块化打包前端代码
+
+<img src="/Users/tfflyer/Library/Application Support/typora-user-images/image-20200116175321169.png" alt="image-20200116175321169" style="zoom:50%;" />
+
+b. 了解前端模块化—commonJs,AMD,CMD, ES6 的Module
+
+<img src="/Users/tfflyer/Library/Application Support/typora-user-images/image-20200116175547631.png" alt="image-20200116175547631" style="zoom:50%;" />
 
 ### 6、屏幕时间
 
