@@ -1,0 +1,14 @@
+---
+layout:     post
+title:      "Python 的 Collections模块
+"
+subtitle:   "Collections模块"
+date:       2020-01-20 18:48:00
+author:     "tfflyer"
+header-img: "img/post-bg-2022.jpg"
+tags:
+    - Week report
+---
+
+> “Yeah I am studying. ”
+>
