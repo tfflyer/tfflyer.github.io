@@ -5,13 +5,101 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 14 Jan 2020 16:02:14 +0800</pubDate>
-    <lastBuildDate>Tue, 14 Jan 2020 16:02:14 +0800</lastBuildDate>
+    <pubDate>Mon, 20 Jan 2020 19:42:17 +0800</pubDate>
+    <lastBuildDate>Mon, 20 Jan 2020 19:42:17 +0800</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
-        <title>Week—report</title>
-        <description>&lt;h2 id=&quot;每周工作报告201916-2020112&quot;&gt;每周工作报告（2019.1.6-2020.1.12）&lt;/h2&gt;
+        <title>周报(2020.1.12-2020.1.17）</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;“Yeah It’s on. ”&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;每周工作报告201916-2020112&quot;&gt;每周工作报告（2019.1.6-2020.1.12）&lt;/h2&gt;
+
+&lt;h3 id=&quot;1文献阅读情况&quot;&gt;1、文献阅读情况&lt;/h3&gt;
+
+&lt;p&gt;a.《BiMorphing》：A  Bi-Directional Bursting Defense Aginst Website Figerprinting Attacks 提出了一种应对流量指纹攻击的防御方法，认为是目前的state-of-the-art&lt;/p&gt;
+
+&lt;h3 id=&quot;2论文进展情况&quot;&gt;2、论文进展情况&lt;/h3&gt;
+
+&lt;p&gt;无&lt;/p&gt;
+
+&lt;h3 id=&quot;3项目参与情况&quot;&gt;3、项目参与情况&lt;/h3&gt;
+
+&lt;p&gt;a. 完成课题五操作系统中交互查询的接口&lt;/p&gt;
+
+&lt;p&gt;b.&lt;/p&gt;
+
+&lt;h3 id=&quot;4毕设实验进展情况&quot;&gt;4、毕设实验进展情况&lt;/h3&gt;
+
+&lt;p&gt;无&lt;/p&gt;
+
+&lt;h3 id=&quot;5其它&quot;&gt;5、其它&lt;/h3&gt;
+
+&lt;p&gt;a.学习了&lt;strong&gt;模块打包机&lt;/strong&gt;webpack，可以模块化打包前端代码&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Users/tfflyer/Library/Application Support/typora-user-images/image-20200116175321169.png&quot; alt=&quot;image-20200116175321169&quot; style=&quot;zoom:50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;b. 了解前端模块化—commonJs,AMD,CMD, ES6 的Module&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Users/tfflyer/Library/Application Support/typora-user-images/image-20200116175547631.png&quot; alt=&quot;image-20200116175547631&quot; style=&quot;zoom:50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;6屏幕时间&quot;&gt;6、屏幕时间&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Users/tfflyer/Library/Application Support/typora-user-images/image-20200112155609634.png&quot; alt=&quot;image-20200112155609634&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 17 Jan 2020 20:48:00 +0800</pubDate>
+        <link>http://localhost:4000/2020/01/17/week-report/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/01/17/week-report/</guid>
+        
+        <category>Week report</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>每日健身(2020.1.18）</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;“Yeah It’s strong. ”&lt;/p&gt;
+
+  &lt;p&gt;2020年1月17日 星期五&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;饮食：摄入1137大卡，运动469大卡，盈余541大卡&lt;/p&gt;
+
+&lt;p&gt;运动：&lt;/p&gt;
+
+&lt;p&gt;跑步机有氧健步走30分钟/182大卡&lt;/p&gt;
+
+&lt;p&gt;深蹲入门10分钟/23大卡&lt;/p&gt;
+
+&lt;p&gt;室内单车游戏竞赛两组7.4公里/98大卡&lt;/p&gt;
+
+&lt;p&gt;跑后拉伸6分钟/15大卡&lt;/p&gt;
+
+&lt;p&gt;哑铃手臂塑形13分钟/34大卡&lt;/p&gt;
+
+&lt;p&gt;体重：-0.3kg&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Jan 2020 02:48:00 +0800</pubDate>
+        <link>http://localhost:4000/2020/01/13/strong/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/01/13/strong/</guid>
+        
+        <category>strong report</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>周报(2020.1.6-2020.1.12）</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;“Yeah It’s on. ”&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;每周工作报告202016-2020112&quot;&gt;每周工作报告（2020.1.6-2020.1.12）&lt;/h2&gt;
 
 &lt;h3 id=&quot;1文献阅读情况&quot;&gt;1、文献阅读情况&lt;/h3&gt;
 
@@ -43,9 +131,11 @@
 
 &lt;p&gt;&lt;img src=&quot;/Users/tfflyer/Library/Application Support/typora-user-images/image-20200112155609634.png&quot; alt=&quot;image-20200112155609634&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 14 Jan 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2020/01/14/week-report/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/01/14/week-report/</guid>
+        <pubDate>Mon, 13 Jan 2020 02:48:00 +0800</pubDate>
+        <link>http://localhost:4000/2020/01/13/week-report/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/01/13/week-report/</guid>
+        
+        <category>Week report</category>
         
         
       </item>
