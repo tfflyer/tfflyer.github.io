@@ -7,7 +7,7 @@ date:       2020-01-20 18:48:00
 author:     "tfflyer"
 header-img: "img/home-bg-1.jpg"
 tags:
-    - Week report
+    - study report
 ---
 
 > “Yeah I am studying. ”

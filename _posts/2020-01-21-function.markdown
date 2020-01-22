@@ -1,0 +1,198 @@
+---
+layout:     post
+title:      "Python 的 函数式编程
+"
+subtitle:   "函数式编程"
+date:       2020-01-21 18:48:00
+author:     "tfflyer"
+header-img: "img/home-bg.jpg"
+tags:
+    - study report
+---
+
+> “Yeah I am studying. ”
+>
+## 函数式编程
+
+**特点：**
+
+1. 把计算视为函数，而非指令
+2. 纯函数式编程，不需要变量，测试简单（python允许有变量 ）
+3. 支持高阶函数，代码简单
+4. 函数可以作为变量试用，支持闭包 可以返回函数
+5. python有限度的支持匿名函数
+
+#### python高阶函数
+
+1. 变量指向函数
+
+2. 函数名其实就是指向函数的变量
+
+   ​         **能够接收函数作为参数的函数成为高阶函数**
+
+#### map（）函数
+
+**map()**是 Python 内置的高阶函数，它接收一个**函数 f** 和一个 **list**，并通过把函数 f 依次作用在 list 的每个元素上，得到一个新的 list 并返回。
+
+**案例**假设用户输入的英文名字不规范，没有按照首字母大写，后续字母小写的规则，请利用**map()**函数，把一个list（包含若干不规范的英文名字）变成一个包含规范英文名字的list：
+
+```python
+def format_name(s):
+    return s[0].upper() + s[1:].lower()
+
+print(map(format_name, ['adam', 'LISA', 'barT']))
+```
+
+#### reduce（）函数
+
+**reduce()**函数也是Python内置的一个高阶函数。reduce()函数接收的参数和 map()类似，**一个函数 f，一个list**，但行为和 map()不同，reduce()传入的函数 f 必须接收两个参数，reduce()对list的每个元素反复调用函数f，并返回最终结果值。
+
+**案例**Python内置了求和函数sum()，但没有求积的函数，请利用recude()来求积：
+
+输入：[2, 4, 5, 7, 12]
+输出：2*4*5*7*12的结果
+
+```python
+from functools import reduce
+# reduce位于functools中
+def prod(x, y):
+    return x*y
+
+print(reduce(prod, [2, 4, 5, 7, 12]))
+```
+
+Python strip() 方法用于移除字符串头尾指定的字符（默认为空格或换行符）或字符序列。
+
+str = "00000003210Runoob01230000000";  
+
+print str.strip( '0' );  # 去除首尾字符 0   
+
+str2 = "   Runoob      ";   # 去除首尾空格
+
+ print str2.strip();
+
+以上实例输出结果如下：
+
+```python
+3210Runoob0123
+Runoob
+```
+
+#### filter（）函数
+
+**filter()**函数是 Python 内置的另一个有用的高阶函数，filter()函数接收一个**函数 f** 和一个**list**，这个函数 f 的作用是对每个元素进行判断，返回 True或 False，**filter()根据判断结果自动过滤掉不符合条件的元素，返回由符合条件元素组成的新list。**
+
+```python
+import math
+
+def is_sqr(x):
+    r = int(math.sqrt(x))
+    return r*r==x
+
+print(filter(is_sqr, range(1, 101)))
+```
+
+#### sorted()函数
+
+ **sorted()**也是一个高阶函数，它可以接收一个比较函数来实现自定义排序，比较函数的定义是，传入两个待比较的元素 x, y，**如果 x 应该排在 y 的前面，返回 -1，如果 x 应该排在 y 的后面，返回 1。如果 x 和 y 相等，返回 0。**
+
+```python
+def cmp_ignore_case(s1, s2):
+    u1 = s1.upper()
+    u2 = s2.upper()
+    if u1 < u2:
+        return -1
+    if u1 > u2:
+        return 1
+    return 0
+
+print(sorted(['bob', 'about', 'Zoo', 'Credit'], cmp_ignore_case))
+```
+
+#### 闭包
+
+内层函数引用了外层函数的变量（参数也算变量），然后返回内层函数的情况，称为**闭包（Closure）**
+
+```python
+def count():
+    fs = []
+    for i in range(1, 4):
+        def f(j):
+            def g():
+                return j*j
+            return g
+        r = f(i)
+        fs.append(r)
+    return fs
+f1, f2, f3 = count()
+print(f1(), f2(), f3())
+```
+
+#### 匿名函数
+
+关键字lambda 表示匿名函数，冒号前面的 x 表示函数参数。
+
+匿名函数有个限制，就是**只能有一个表达式**，**不写return**，返回值就是该表达式的结果。
+
+#### 装饰器
+
+![image-20200121151550592](https://tva1.sinaimg.cn/large/006tNbRwgy1gb47fx0qc7j31np0u07ia.jpg)
+
+![image-20200121151616093](https://tva1.sinaimg.cn/large/006tNbRwgy1gb47g6p3vwj31vz0u0474.jpg)
+
+![image-20200121151640585](https://tva1.sinaimg.cn/large/006tNbRwgy1gb47gln0vrj31o20u0wqe.jpg)
+
+#### 偏函数
+
+当一个函数有很多参数时，调用者就需要提供多个参数。如果减少参数个数，就可以简化调用者的负担。
+
+比如，int()函数可以把字符串转换为整数，当仅传入字符串时，int()函数默认按十进制转换：
+
+```
+>>> int('12345')
+12345
+```
+
+但int()函数还提供额外的base参数，默认值为10。如果传入base参数，就可以做 N 进制的转换：
+
+```
+>>> int('12345', base=8)
+5349
+>>> int('12345', 16)
+74565
+```
+
+假设要转换大量的二进制字符串，每次都传入int(x, base=2)非常麻烦，于是，我们想到，可以定义一个int2()的函数，默认把base=2传进去：
+
+```
+def int2(x, base=2):
+    return int(x, base)
+```
+
+这样，我们转换二进制就非常方便了：
+
+```
+>>> int2('1000000')
+64
+>>> int2('1010101')
+85
+```
+
+functools.partial就是帮助我们创建一个偏函数的，不需要我们自己定义int2()，可以直接使用下面的代码创建一个新的函数int2：
+
+```
+>>> import functools
+>>> int2 = functools.partial(int, base=2)
+>>> int2('1000000')
+64
+>>> int2('1010101')
+85
+```
+
+所以，functools.partial可以把一个参数多的函数变成一个参数少的新函数，少的参数需要在创建时指定默认值，这样，新函数调用的难度就降低了。
+
+### 模块和包
+
+在文件系统中，包就死文件夹，二模块则为文件夹中的XXX.py文件,包也可以有多级。
+
+包里面有一个 \__init__.py
