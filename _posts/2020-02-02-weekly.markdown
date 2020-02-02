@@ -1,0 +1,56 @@
+---
+layout:     post
+title:      "周报(2020.1.20-2020.2.2）"
+subtitle:   " \"weekly, report\""
+date:       2020-02-02 10:48:00
+author:     "tfflyer"
+header-img: "img/img11.jpg"
+tags:
+    - Week report
+---
+
+> “Yeah It's on. ”
+>
+
+
+## 每周工作报告（2019.1.20-2020.2.2）
+
+### 1、文献阅读情况
+
+a. *isAnon: Flow-Based Anonymity Network Trafﬁc Identiﬁcation Using Extreme Gradient Boosting*论文提出了一种通过互信息以及随机森林来提取特征、多维度交叉验证防止过拟合的匿名流量分类方法，最后使用XGboost作为分类器，在实验方面提供诸多参考
+
+b. *Anon17: Network Traffic Dataset of Anonymity Services* 论文提供了一套数据集**Anon17**，可以用于后续实验做benchmark使用
+
+
+
+### 2、论文进展情况
+
+无
+
+### 3、项目参与情况
+
+a. 协助完成测试报告中的用例-数据处理流程
+
+<img src="https://tva1.sinaimg.cn/large/006tNbRwly1gb4cq1v850j30hl0mh75m.jpg" alt="测试用例" style="zoom:33%;" />
+
+b.
+
+### 4、毕设实验进展情况
+
+a.新了解一种pacp2flow的流量处理工具tranalyzer2，为大论文实验做准备
+
+b.
+
+### 5、其它
+
+a.[学习了python的collections中的数据结构](https://tfflyer.github.io/2020/01/21/function/)
+
+b.[学习了python的函数式编程与高阶函数](https://tfflyer.github.io/2020/01/20/collections/)
+
+
+
+### 6、屏幕时间
+
+![屏幕时间](https://tva1.sinaimg.cn/large/006tNbRwly1gbht96invbj30wp0u0q9d.jpg)
+
+![2](https://tva1.sinaimg.cn/large/006tNbRwly1gbhtejbmj8j31ll0u0ai9.jpg)
