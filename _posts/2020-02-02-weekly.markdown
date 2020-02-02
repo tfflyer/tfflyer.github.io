@@ -41,7 +41,7 @@ a.新了解一种pacp2flow的流量处理工具tranalyzer2，为大论文实验�
 
 b.
 
-### 5、其它
+### 5、其它(点击跳转到笔记)
 
 a.[学习了python的collections中的数据结构](https://tfflyer.github.io/2020/01/21/function/)
 
