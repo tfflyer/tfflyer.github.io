@@ -1,0 +1,265 @@
+---
+layout:     post
+title:      "Node.js从入门到放弃"
+subtitle:   "requests"
+date:       2020-02-05 14:48:00
+author:     "tfflyer"
+header-img: "img/home-bg-2.jpg"
+tags:
+    - study report
+---
+
+> “Yeah I am studying. ”
+
+# node.js+react的开发到放弃
+
+## 第一个node.js程序
+
+```react
+// 读取系统的cpu的信息
+const os =require("os");
+const cpus = os.cpus();
+// 获取当前系统的cpu的数量
+console.log(cpus.length);
+
+const memory = os.totalmem(); //bytes
+const free_memory = os.freemem();
+// 读取内存
+console.log(memory/1024/1024/1024); //GB
+console.log(free_memory/1024/1024/1024);
+```
+
+```react
+// 建立前端服务
+const http = require("http");
+const server = http.createServer((req,res)=>{
+  res.end("hello tfflyer")
+})
+
+server.listen(3000,"127.0.0.1",()=>{console.log("engine start");})
+
+```
+
+## Nodejs和npm
+
+![image-20200204112214493](/Users/tfflyer/Library/Application Support/typora-user-images/image-20200204112214493.png)
+
+npm 主要负责包管理
+
+## Nodemon
+
+### 使用脚本启动
+
+```json
+{
+  "name": "node_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node src/demo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+```
+
+Nodemon可以适用开发环境，自动重启服务
+
+### 配置nodemon
+
+1. 安装nodemon
+
+   npm install nodemon -D
+
+2. 修改package.json启动命令
+
+​    `"start":"nodemon src/demo.js",`
+
+//DEBUG=*
+
+开启debugmosh
+
+3. 通过增加nodemon.json指定nodemon的配置，watch的目录
+
+<img src="https://tva1.sinaimg.cn/large/006tNbRwly1gbk80a63xdj30de0b4q3g.jpg" alt="image-20200204114437803" style="zoom:50%;" />
+
+### 使用nrm管理npm源
+
+nrm是用来管理npm源的东西
+
+```cmake
+nrm ls
+nrm current   //目前使用的源
+nrm use ***. //切换源
+* npm -------- https://registry.npmjs.org/
+  yarn ------- https://registry.yarnpkg.com/
+  cnpm ------- http://r.cnpmjs.org/
+  taobao ----- https://registry.npm.taobao.org/
+  nj --------- https://registry.nodejitsu.com/
+  npmMirror -- https://skimdb.npmjs.com/registry/
+  edunpm ----- http://registry.enpmjs.org/
+```
+
+## Web应用
+
+**包括**：前端（app、ajax）、服务器、缓存/数据库
+
+**express**是一个接收req，处理res的工具
+
+app是 web服务的实例
+
+```typescript
+const express = require("express");
+const app = express();
+// 创建一个实例
+app.get('/name',(req,res)=>{
+  let {age} = req.params;
+  console.log(age);
+  res.send("tfflyer")
+})
+app.listen(3000,()=>{
+  console.log("server start success ");
+})
+```
+
+```typescript
+const express = require("express");
+const app = express();
+// 创建一个实例
+app.get('/name/:age',(req,res)=>{
+  let {age} = req.params;
+  console.log(age);
+  res.json({
+    "name":"tfflyer",
+    "age":age,
+  })
+  // res.send("tfflyer")
+
+
+})
+
+app.post('/name',(req,res)=>{
+  let {age} = req.params;
+  console.log(age);
+  res.send("tfflyer post")
+
+
+})
+
+app.listen(3000,()=>{
+  console.log("server start success ");
+})
+```
+
+## 路由的使用
+
+**路由 ：** 响应请求的规则
+
+1. 请求方法来区分：  get / post
+2. 通过uri==》路径
+
+```typescript
+// 2. 通过uri
+app.get('/user/byname',(req,res)=>{
+let {name} = req.query;
+console.log(name);
+res.json({
+  name
+})
+
+})
+
+app.get('/user/byid',(req,res)=>{
+let {id} = req.query;
+res.json({
+  id
+})
+
+})
+```
+
+需要定一个路由/api需要满足，客户端无论通过什么请求方式(get/delete/)都可以进行响应，
+
+
+
+```typescript
+// 3.全响应
+app.all("/demo",(req,res)=>{
+res.json({
+message:"demo",
+method:req.method
+})
+})
+```
+
+```javascript
+app.all("*",(req,res)=>{
+res.json({
+message:"demo",
+method:req.method,
+uri:req.path
+
+})
+})
+```
+
+### App.use
+
+一般作为中间件来使用
+
+```javascript
+app.use((req,res)=>{
+res.json({
+message:"demo",
+method:req.method,
+uri:req.path
+
+})
+})
+```
+
+路由的拆分
+
+```javascript
+//router.js
+const express = require("express");
+const router = express.Router();
+
+router.get("/list",(req,res)=>{
+res.json({
+list:[{
+  id:001,
+  name:"tfflyer"
+}]
+
+})
+
+})
+module.exports = router;
+```
+
+```javascript
+//app.js
+const memberRouter = require("./member.router");
+// 注册路由
+app.use(memberRouter)
+```
+
+### 中间件
+
+中间件完整的结构：
+
+1. 是一个函数
+
+2. err、req、res、next=》function
+
+异常函数、功能函数然后转交控制权给next、响应请求
+
+中间件可以在app级别使用，也可以在路由级别使用
+
+![image-20200205093916410](https://tva1.sinaimg.cn/large/006tNbRwly1gbla076rmlj31820bmaeb.jpg)
+
+**学不动了**，要长蘑菇了
