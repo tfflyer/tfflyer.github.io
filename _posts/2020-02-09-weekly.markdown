@@ -1,0 +1,47 @@
+---
+layout:     post
+title:      "周报(2020.2.3-2020.2.9）"
+subtitle:   " \"weekly, report\""
+date:       2020-02-09 13:48:00
+author:     "tfflyer"
+header-img: "img/img10.jpg"
+tags:
+    - Week report
+---
+
+> “Yeah It's fine. ”
+>
+
+### 1、文献阅读情况
+
+a. *Deep Packet: A Novel Approach For Encrypted Traffic Classification Using Deep Learning* 文章提出了一种基于堆叠自动编码及与CNN的深度包识别方法，来识别加密流量，主要针对VPN类流量进行识别，对大论文实验具有一定的参考意义
+
+b. *Against Malicious SSL/TLS Encryption: Identify Malicious Traffic Based on Random Forest*
+
+### 2、论文进展情况
+
+a.完善了实验相关部分的介绍，之前实验的一些数据进行了填充，但是没法开展进一步的实验，学校服务器连不上，很多数据、算法暂时不在本地。
+
+### 3、项目参与情况
+
+a.无
+
+### 4、毕设实验进展情况
+
+a.
+
+b.
+
+### 5、其它
+
+a.学习ORM编程，对象关系映射，通过关系映射工具实现数据库中条目到前端实例对象的转换，结合之前了解的MCV模式，理解了前后端连接高效的数据转换方法（之前一直不回数据的自动转换）
+
+b.面向excel表格抗疫，天天在做表
+
+[c.学习了node.js、express，除django、flask等基于python的web框架外，又熟悉了一种基于javascript的前端Web框架](https://tfflyer.github.io/2020/02/05/nodejs/)。
+
+d.开始准备公务员考试申论，主要是练字，每天一张字帖
+
+### 6、屏幕时间
+
+![image-20200209223746905](https://tva1.sinaimg.cn/large/0082zybply1gbqizhn81oj30wp0u0qbp.jpg)
