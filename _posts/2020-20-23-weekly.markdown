@@ -1,0 +1,65 @@
+---
+layout:     post
+title:      "周报(2020.2.10-2020.2.23）"
+subtitle:   " \"weekly, report\""
+date:       2020-02-23 13:48:00
+author:     "tfflyer"
+header-img: "img/img2.jpg"
+tags:
+    - Week report
+---
+
+> “Yeah It's sad. ”
+>
+
+## 每周工作报告（2019.2.10-2020.2.22）
+
+### 1、文献阅读情况
+
+a.   Levels Analysis of Network Attack Traceback.
+
+b.  A systematic review of IP traceback schemes for denial of service attacks
+
+c.Traceback model for identifying sources of distributed attacks in real time. //修改信息网络安全期刊文章所查阅的资料，用于补充引言中综述部分；
+
+d. Dynamic Trafﬁc Feature Camouﬂaging via Generative Adversarial Networks，一种应对流量审查的流量混淆方案，基于GAN实现
+
+e.Deep Learning Website Fingerprinting Features.一篇类综述性质的文章，主要关于基于网站指纹的流量识别问题
+
+![image-20200223204934191](https://tva1.sinaimg.cn/large/0082zybply1gc6mj5hiisj30vc0ic43d.jpg)
+
+f.边缘计算数据安全与隐私保护研究综述
+
+![image-20200223161055581](https://tva1.sinaimg.cn/large/0082zybply1gc6eha1u6jj31eq0li4am.jpg)
+
+g.5G MEC架构在移动办公系统中的安全应用
+
+### 2、论文进展情况
+
+a.对溯源的的论文进行了修改。
+
+b.流量二分类识别的论文，还缺少实验数据的填充以及实验章节的完善，之前的数据都在实验室的服务器里，现在连不上服务器，暂时搁置；
+
+c.准备先着手第二篇小论文，基于网站指纹的匿名流量多分类识别；刚开始看文献
+
+### 3、项目参与情况
+
+a.杜老师安排准备把公司做的大屏前端整合成系统，目前思路是：基于Django或flask做一个前后端分离的Web服务，困难在于，前端公司使用vue和node.js做的，需要个学习的过程
+
+### 4、毕设实验进展情况
+
+a.准备开展第二个实验：基于Web指纹的匿名流量多分类
+
+
+
+### 5、其它
+
+a. 学习了glow，flow based generative model，一种通过概率分布计算实现的生成模型，作为大论文中的补充（待定）
+
+b.看了移动办公、边缘计算安全相关的一些文章，准备给芦老师发的征稿的那个写一篇小文章；
+
+c.
+
+###  6、屏幕时间
+
+![](https://tva1.sinaimg.cn/large/0082zybply1gc6n27kij6j31kb0u0wni.jpg)
