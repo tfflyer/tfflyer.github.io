@@ -31,7 +31,6 @@ b. *Anon17: Network Traffic Dataset of Anonymity Services* 论文提供了一套
 
 a. 协助完成测试报告中的用例-数据处理流程
 
-<img src="https://tva1.sinaimg.cn/large/006tNbRwly1gb4cq1v850j30hl0mh75m.jpg" alt="测试用例" style="zoom:33%;" />
 
 b.
 
